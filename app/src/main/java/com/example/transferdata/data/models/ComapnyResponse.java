@@ -1,0 +1,33 @@
+package com.example.transferdata.data.models;
+
+import com.google.gson.annotations.SerializedName;
+
+public class ComapnyResponse
+{
+    @SerializedName("name")
+    String  name	;
+
+    @SerializedName("description")
+    String description;
+
+    public ComapnyResponse(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+}
